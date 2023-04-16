@@ -12,4 +12,4 @@
 #### Note
 
 There is a version with 13B parameters <a href="https://huggingface.co/eachadea/ggml-vicuna-13b-1.1">here</a>
-Couldn't use it with `llama-node`
+Couldn't use it with <a href="https://www.npmjs.com/package/llama-node">llama-node</a> dependency
