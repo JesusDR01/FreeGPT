@@ -1,8 +1,11 @@
 import path from 'path';
 import { LLama } from "llama-node";
 import { LLamaCpp } from "llama-node/dist/llm/llama-cpp.js";
+
 const llama = new LLama(LLamaCpp);
+
 const model = path.resolve(process.cwd(), './ggml-vicuna-7b-4bit-rev1.bin');
+
 const config = {
   path: model,
   enableLogging: true,
@@ -21,6 +24,7 @@ llama.load(config);
 const getPrompt = async (req, res) => {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.setHeader('Transfer-Encoding', 'chunked');
+  
   const template = req.query.prompt;
 
   const prompt = `### Human:
