@@ -11,6 +11,7 @@ app.set('port', 3001);
 if (process.env.NODE_ENV === 'development') {
     app.use(errorHandler());
 }
+
 app.get('/', getPrompt)
 
 app.listen(app.get('port'), () => {
