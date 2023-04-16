@@ -1,0 +1,29 @@
+{
+  "name": "llama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --experimental-modules ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "dependencies": {
+    "@llama-node/core": "^0.0.26",
+    "@llama-node/llama-cpp": "^0.0.26",
+    "body-parser": "^1.20.2",
+    "errorhandler": "^1.5.1",
+    "express": "^4.18.2",
+    "llama-node": "^0.0.26"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4"
+  }
+}
