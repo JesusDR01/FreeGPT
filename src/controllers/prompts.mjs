@@ -24,7 +24,7 @@ llama.load(config);
 const getPrompt = async (req, res) => {
   res.setHeader('Content-Type', 'text/html; charset=utf-8');
   res.setHeader('Transfer-Encoding', 'chunked');
-  
+
   const template = req.query.prompt;
 
   const prompt = `### Human:
